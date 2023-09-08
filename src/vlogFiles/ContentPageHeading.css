@@ -1,0 +1,72 @@
+#section-bradcrum{
+    color:#fff;
+    padding:60px 0 20px 0;
+}
+/* this can be removed this class will be sent to jsx file of respective pages */
+.historybg{
+    background: linear-gradient(red,white) no-repeat center top;
+    background-size: cover;
+}
+
+.containera {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.rowa {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.columna{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#section-bradcrum .h1-brandcrum {
+    font-size: 22px;
+    margin-top: 180px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+@media (min-width: 1200px){
+    .containera {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px){
+    .containera {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .containera {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px){
+    .containera {
+        max-width: 540px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    
+    #section-bradcrum .h1-brandcrum {
+        font-size: 16px;
+        margin-top: 180px;
+    }
+}

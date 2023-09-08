@@ -1,0 +1,96 @@
+.main-nav{
+    width:100%;
+    height: 4rem;
+    background-color: #4eafff;
+}
+.menu-link{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.menu-link-desktop{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding:0;
+}
+
+.menu-link-desktop li{
+
+    padding:16px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:black;
+}
+
+.menu-link-desktop li a{
+    color: #363535;
+    transition: 0.5s ease-in-out;
+}
+.menu-link-desktop li:first-child{
+    
+    margin-left:2rem;
+}
+
+.menu-link-desktop li a:hover,
+.menu-link-desktop li a.active{
+    color:black;
+    text-decoration: underline;
+}
+#hamburger-menu{
+    display:none;
+}
+
+@media screen and (max-width:1090px){
+    /* .menu-link-desktop{
+        display: none;
+
+    } */
+    #hamburger-menu{
+        position: relative;
+        display: block;
+        margin:1rem 2rem;
+        font-size:1.5rem;
+        width:fit-content;
+        top:-430px;
+        border-radius: 6px;
+        z-index: 99;
+    }
+    #hamburger-menu:hover{
+        cursor: pointer;
+        
+        transition: 0.5s ease-in;
+        
+    }    
+    #hamburger-menu:active{
+        /* background-color: #388dd2; */
+        border:4px solid white;
+        transform: rotate(90deg);
+
+    }
+    .menu-link-desktop{
+        width:75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding:0;
+        background-color: rgb(50, 154, 233);
+        z-index: 50;
+        position: relative;
+        top:4.0rem;
+        left:-2px;
+        transition: 0.4s ease;
+
+    }
+    .menu-link-desktop.mobile{
+        left:-600px;
+        transition: 1.0s cubic-bezier(0.4, 0, 1, 1);
+    }
+    .menu-link-desktop.desktop{
+        left:0px;
+        transition: 0.7s cubic-bezier(0, 0.67, 0.44, 1.01);
+        border-radius: 0 12px 12px 0; /*on risk*/
+        box-shadow: 1px 10px 20px 6px #004b5c;
+    }    
+}

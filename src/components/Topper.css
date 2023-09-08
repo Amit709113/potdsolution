@@ -1,0 +1,29 @@
+
+
+.alumni-info{
+    /* border:2px solid black; */
+    width: 100%;
+    
+}
+
+.container{
+    /* border: 2px solid black; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    padding:21px 0px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600 ;
+    color:#333;
+    background-color: #eee;
+    width:100vw;
+}
+._image_50s4q_87{
+    filter: brightness(1.3);
+}

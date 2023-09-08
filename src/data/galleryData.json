@@ -1,0 +1,99 @@
+{
+    "galleryData":[
+        
+        {
+            "id":"1",
+            "category":"_2023",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1VuptCmVtdxhs5RR-p8sVv3XUcSKjs2_C",
+            "alt":"gallery-image",
+            "caption":"Taekwondo Training"
+        },
+        {
+            "id":"2",
+            "category":"before_2022",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1U7d9IW05P3HGTuAiPd-FlZRlgZWdchhO",
+            "alt":"gallery-image",
+            "caption":"Morning Exercise"
+        },
+        {
+            "id":"3",
+            "category":"_2023",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1UFHPvhiGwgcV902y6OWK7KjLe8pNjDqI",
+            "alt":"gallery-image",
+            "caption":"Winners 🎉"
+        },
+        {
+            "id":"4",
+            "category":"before_2022",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1Tt5K-uILv2UtXzhsCByclUYnQH5HxdUp",
+            "alt":"gallery-image",
+            "caption":"Winners 🎉"
+        },
+        {
+            "id":"5",
+            "category":"_2023",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1ThGijIZba-7_DDBf7gDUoaMNcy9sgZzR",
+            "alt":"gallery-image",
+            "caption":"Yoga Day"
+        },    
+
+        {
+            "id":"6",
+            "category":"before_2022",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1UIviW0kP5oXJ8Yz8lfXnlK_T77EDiwK5",
+            "alt":"gallery-image",
+            "caption":"Taekwondo Demonstration"
+        },
+        {
+            "id":"7",
+            "category":"others",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1MbRpLviJevdezynEEz87xUC-a80mNLZ2",
+            "alt":"gallery-image",
+            "caption":"School at Multiple Stages"
+        },
+        {
+            "id":"8",
+            "category":"_2023",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1TaD5s4QB_a6lwsliZYtC1dgIt-WQVtBt",
+            "alt":"gallery-image",
+            "caption":"Our first building"
+        },
+        {
+            "id":"9",
+            "category":"_2023",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1TZnPzb4qLgMuccDCFKrqJKIY5DBfxns9",
+            "alt":"gallery-image",
+            "caption":"main building"
+        },
+        {
+            "id":"10",
+            "category":"before_2022",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1TzlsU2oHsk3P7OV-VxqPbHwisK2HnM6H",
+            "alt":"gallery-image",
+            "caption":"morning assembly"
+        },
+        
+        {
+            "id":"11",
+            "category":"others",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1TiaqeIyb1a7q3NmPydwwdyJf0ORwHQmX",
+            "alt":"gallery-image",
+            "caption":"male facalities "
+        },
+        {
+            "id":"12",
+            "category":"others",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1TWwpk9Ql7c3QrRBwhbgL2xi6t4TX58O5",
+            "alt":"gallery-image",
+            "caption":"our office"
+        }
+        ,
+        {
+            "id":"13",
+            "category":"republic_day_2022",
+            "imgSrc":"http://drive.google.com/uc?export=view&id=1TupAJ5P4n_lVRTlVAq_bNN06fxXeRCJN",
+           "alt":"gallery-image",
+            "caption":"Teacher's day 2022"
+        }
+    ]
+}

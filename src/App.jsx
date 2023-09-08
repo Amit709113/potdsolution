@@ -1,92 +1,159 @@
-import React from 'react'
-import sep8 from "./sep8.png"
+import React, { useState } from 'react';
+import './App.css'
+import { BrowserRouter, Route,Routes, useSearchParams } from 'react-router-dom';
 
-const answer=
-`
-    if(root==null) return null;
-    ArrayList<Integer>list=new ArrayList<>();
-    inorder(root,list);
-    Collections.sort(list);
-    int[] idx={0};
-    inorderChange(root,list,idx);
-    return root;
-    }
-    public void inorder(Node root,ArrayList<Integer>list){
-    if(root==null) return;
-    inorder(root.left,list);
-    list.add(root.data);
-    inorder(root.right,list);
-    }
-    public void inorderChange(Node root,ArrayList<Integer>list,int[] idx){
-    if(root==null) return;
-    inorderChange(root.left,list,idx);
-    root.data = list.get(idx[0]);
-    idx[0]++;
-    inorderChange(root.right,list,idx);
-    
-`
-const stepp=`
+import SharedLayout from './router/SharedLayout'
+import Home from './router/Home'
+import About from './router/About'
+import Abuscus from './router/Abuscus'
+import AdmProcedure from './router/AdmProcedure'
+import CsLab from './router/CsLab'
+import Error from './router/Error'
+import FeeStructure from './router/FeeStructure'
+import GalleryRoute from './router/GalleryRoute'
+import Library from './router/Library'
+import ListOfHolyday from './router/ListOfHolyday'
+import PrincipleMessage from './router/PrincipleMessage'
+import SchoolStrength from './router/SchoolStrength'
+import SchoolStatistic  from './router/SchoolStatistic';
+import Staff from './router/Staff'
+import SportsTeakwondo from './router/SportsTeakwondo';
+import Transportation from './router/Transportation'
+import WhyDps from './router/WhyDps'
+import Notice from './router/Notice';
+import Contect from './router/Contect';
+// import TopperService from './services/topperService';
 
-STEP 1: change language to java 🚩  
-STEP 2: paste at marked position
-class Solution
-{
-    // The given root is the root of the Binary Tree
-    // Return the root of the generated BST
-    Node binaryTreeToBST(Node root)
-    {
-       // Your code here
-       //paste here
-    }
-}
- 
+import LogIn from './crud/Login'
+import Register from './crud/Register'
+
+import DashBoard from './backend/DashBoard'
+import PrivateRoute from './backend/PrivateRoute'
+// import BackendNav from './backend/BackendNav'
+import CreateNotice from './backend/notice_backend/CreateNotice'
+import DeleteNotice from './backend/notice_backend/DeleteNotice.jsx';
+import GetAllNotice from './backend/notice_backend/GetAllNotice'
+import GetAllCarousel from './backend/carousel_backend/GetAllCarousel'
+import CreateCarousel from './backend/carousel_backend/CreateCarousel'
+import DeleteCarousel from './backend/carousel_backend/DeleteCarousel'
+
+import DeleteTopper from './backend/topper_backend/DeleteTopper'
+import GetAllTopper from './backend/topper_backend/GetAllTopper'
+import ElementNav from './backend//ElementNav'
+import CreateTopper from './backend/topper_backend/CreateTopper'
+
+import GetAllImageByCategory from './backend/gallery_backend/GetAllImageByCategory'
+import DeleteCategory from './backend/category_backend/DeleteCategory'
+import CreateCategory from './backend/category_backend/CreateCategory'
+import GetAllCategory from './backend/category_backend/GetAllCategory'
+import GetAllImage from './backend/gallery_backend/GetAllImage'
+import UploadImage from './backend/gallery_backend/UploadImage'
+import DeleteImage from './backend/gallery_backend/DeleteImage'
+import GetAllUser from './backend/user_backend/GetAllUser'
+import CreateUser from './backend/user_backend/CreateUser'
+import DeleteUser from './backend/user_backend/DeleteUser'
 
 
-`
-const copyHandler= ()=>{
-    navigator.clipboard.writeText(answer).then(() => {
-        alert("(-> JAVA The code has been copied successfully 👍🏽");
-      })
-      .catch(() => {
-        alert("something went wrong please copy manually😔");
-      });
-    
-}
-const btnStyle={
-    background:"#9b59b6",
-    color:"#fff",
-    border:"2px solid #ecf0f1",
-    outline:"none",
-    borderRadius:"5px",
-    textTransform:"uppercase",
-    cursor:"pointer",
-    padding:"15px 20px"
-}
-const App = () => {
- return (
+import Headers from './router/Headers';
+import MayBeShowNavbar from './router/MayBeShowNavbar';
+import Footer from './components/Footer';
+
+
+
+function App() {
+  const [showFooter,setShowFooter]=useState(true);
+  const setFoot=(value)=>{
+    setShowFooter(value);
+  }
+  return (
     <>
-        <h1>Solution of POTD  </h1>
-        <h3><img src={sep8} alt="sep 8,2023" width="100px" height="50px" /></h3>
-        <p>at 09:10 am</p>
+
+      <BrowserRouter>
+        <MayBeShowNavbar setFoot={setFoot}>
+          <Headers />
+        </MayBeShowNavbar>
+
+        <Routes>
+          <Route path='/' element={<SharedLayout />} >
+            <Route path='/testvite' element={<Home />} />
+            
+            <Route path='/testvite/about' element={<About />}/>
+            <Route path='/testvite/whydps' element={<WhyDps />}/>
+            <Route path='/testvite/admprocedure' element={<AdmProcedure />}/>
+            <Route path='/testvite/feestructure' element={<FeeStructure />}/>
+            <Route path='/testvite/principlemsg' element={<PrincipleMessage />}/>
+            <Route path='/testvite/schoolstatistic' element={<SchoolStatistic />}/>
+            <Route path='/testvite/staff' element={<Staff />}/>
+            <Route path='/testvite/schoolstrength' element={<SchoolStrength />}/>
+            <Route path='/testvite/listofholyday' element={<ListOfHolyday />}/>
+            <Route path='/testvite/cslab' element={<CsLab />}/>
+            <Route path='/testvite/library' element={<Library />}/>
+            <Route path='/testvite/abuscus' element={<Abuscus />}/>
+            <Route path='/testvite/gallery' element={<GalleryRoute />}/>
+            <Route path='/testvite/sports-teakwondo' element={<SportsTeakwondo />}/>
+            <Route path='/testvite/transportation' element={<Transportation />}/>
+          
+            <Route path='/testvite/notice' element={<Notice/>} />
+            <Route path='/testvite/contectus' element={<Contect />} />
+
+            <Route path='/testvite/login' element={<LogIn />} />
+            <Route path='/testvite/register' element={<Register/>} />
+            <Route path='/testvite/user' element={<PrivateRoute />}>
+
+              <Route path="info" element={<h1>info</h1>}/>
+              <Route path='dashboard' element={<DashBoard/>} >
+
+                {/* notice relate routing */}
+                <Route path='notice' element={<ElementNav element='notice' />}>
+                  <Route path="all" element={<GetAllNotice />}/>
+                  <Route path="create" element={<CreateNotice />}/>
+                  <Route path="delete" element={<DeleteNotice />}/>
+                </Route>
+          
+                {/* carousel related routing */}
+                <Route path='carousel' element={<ElementNav element="carousel"/>}>
+                  <Route path="all" element={<GetAllCarousel />}/>
+                  <Route path="create" element={<CreateCarousel />}/>
+                  <Route path="delete" element={<DeleteCarousel />}/>
+                </Route>
         
-        <div>
-            <pre>
-                {stepp}
-            </pre> 
-        </div>
-        <br />
-        <p>{`ans ->`}</p>
-        <br />
-        <div style={{display:"flex",justifyContent:"center",gap:50}}>
-            <button style={btnStyle} onClick={copyHandler}> click to copy </button>
-            <a href="https://practice.geeksforgeeks.org/problem-of-the-day"><button style={btnStyle} marginRight="50px" >POTD direct Link</button></a>
-        </div>
-        <br />
-        <div style={{display:'flex',justifyContent:"center"}}>
-        <textarea className='textareaStyle' type="textarea" style={{fontSize: "12pt",width:"90%",height:"60vh",background:"#d3d3d3"}} defaultValue={answer} readOnly>
-        </textarea>
-        </div>    
+                {/* topper related routing */}
+                <Route path='topper' element={<ElementNav element="topper"/>}>
+                  <Route path="all" element={<GetAllTopper />}/>
+                  <Route path="create" element={<CreateTopper />}/>
+                  <Route path="delete" element={<DeleteTopper />}/>
+                </Route>
+        
+                {/* category related routing */}
+                <Route path='category' element={<ElementNav element="category"/>}>
+                  <Route path="all" element={<GetAllCategory />}/>
+                  <Route path="create" element={<CreateCategory />}/>
+                  <Route path="delete" element={<DeleteCategory />}/>
+                  <Route path="cname" element={<GetAllImageByCategory />}/>
+                </Route>
+            
+                {/* Image related routing */}
+                <Route path='gallery' element={<ElementNav element="gallery"/>}>
+                  <Route path="all" element={<GetAllImage  />}/>
+                  <Route path="create" element={<UploadImage />}/>
+                  <Route path="delete" element={<DeleteImage />}/>
+                  <Route path="category" element={<GetAllImageByCategory />}/>
+                </Route>
+
+                {/* user related routing */}
+                <Route path='users' element={<ElementNav element="users"/>}>
+                  <Route path="all" element={<GetAllUser  />}/>
+                  <Route path="create" element={<CreateUser />}/>
+                  <Route path="delete" element={<DeleteUser />}/>
+                </Route>
+              </Route>
+            </Route>
+          </Route>
+        </Routes>
+        {showFooter ?<Footer />:null}
+      </BrowserRouter>
     </>
   )
 }
+
 export default App

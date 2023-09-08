@@ -1,0 +1,60 @@
+
+
+{
+
+    "whydps": {
+    
+        "heading":"Why Divine Public School",
+        "bgimgsrc":"http://drive.google.com/uc?export=view&id=1UFHPvhiGwgcV902y6OWK7KjLe8pNjDqI",
+        "subHeading":"What makes us best suitable for your wards",
+        "contentImage":"http://drive.google.com/uc?export=view&id=1UIviW0kP5oXJ8Yz8lfXnlK_T77EDiwK5",
+        "paraList":[
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae, voluptatem eum quibusdam modi non maxime commodi possimus aperiam fugiat illo cum tenetur quod impedit quae, similique expedita itaque. Incidunt deleniti consequuntur maiores vero temporibus, distinctio delectus sit non ea!",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae, voluptatem eum quibusdam modi non maxime commodi possimus aperiam fugiat illo cum tenetur quod impedit quae, similique expedita itaque. Incidunt deleniti consequuntur maiores vero temporibus, distinctio delectus sit non ea!"
+        ],
+        "ulItemList":[
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\" ",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\"",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\"",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\"",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\"",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\""
+        ]
+         
+    },
+    "admprocedure": {
+         
+        "heading":"Admission Procedure",
+        "bgimgsrc":"http://drive.google.com/uc?export=view&id=1VuvR0xxTRWIFzM1cSUXykSdwfgEilS5F",
+        "subHeading":"Steps",
+        "contentImage":"http://drive.google.com/uc?export=view&id=1TupAJ5P4n_lVRTlVAq_bNN06fxXeRCJN",
+        "paraList":[
+            "Our school encourages students participating in extracurricular activities and it is a great way to widen and broaden students’ social circle, expand their interests, and build leadership skills. Our school promotes students’ involvement in school extracurricular activities which leads to positive long-term outcomes.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae, voluptatem eum quibusdam modi non maxime commodi possimus aperiam fugiat illo cum tenetur quod impedit quae, similique expedita itaque. Incidunt deleniti consequuntur maiores vero temporibus, distinctio delectus sit non ea!"
+        ],
+        "ulItemList":[
+            "The discipline  ",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\""
+        ]
+    
+    },
+    
+    "fee-structure": {
+        
+        "heading":"Fee Structure",
+        "bgimgsrc":"http://drive.google.com/uc?export=view&id=1VuvR0xxTRWIFzM1cSUXykSdwfgEilS5F",
+        "subHeading":"",
+        "contentImage":"http://drive.google.com/uc?export=view&id=1TupAJ5P4n_lVRTlVAq_bNN06fxXeRCJN",
+        "paraList":[
+            "Our school encourages students participating in extracurricular activities and it is a great way to widen and broaden students’ social circle, expand their interests, and build leadership skills. Our school promotes students’ involvement in school extracurricular activities which leads to positive long-term outcomes.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae, voluptatem eum quibusdam modi non maxime commodi possimus aperiam fugiat illo cum tenetur quod impedit quae, similique expedita itaque. Incidunt deleniti consequuntur maiores vero temporibus, distinctio delectus sit non ea!"
+        ],
+        "ulItemList":[
+            "The discipline  ",
+            "\"Delivering the content through excellent teachers proficient in creating an environment which fosters enquiring attitude and creativity.\""
+        ]
+    
+    }    
+}
+ 
+        

@@ -1,0 +1,204 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+::before,::after{
+   box-sizing: border-box;
+}
+.school_info{
+    display: grid;
+    grid-template-columns: 6rem 1fr 3rem;
+    width: 100%;
+    padding: 5px 0px;
+    background: #6080f4;
+}
+/* grid template column of school-info 300 se 600*/
+.container-school-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+/* something to do for responsive */
+.logo-container{
+    flex: 100px;
+}
+
+.school-detail{
+    flex:80%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.school-name h1{
+    font-size: 2.3rem;
+    margin:10px -10px;
+    color:#e9ec36
+    
+}
+.school-name-style{
+    
+    /* color:linear-gradient(to bottom right, red, yellow); */
+    text-shadow: 3px 2px 6px #21240b;
+    -webkit-text-stroke: 0.5px rgba(178, 142, 43, 0.352);
+}
+.school-address-style{
+    color:#f2ee88;
+    -webkit-text-stroke: 3px rgba(178, 142, 43, 0.352);
+    text-shadow: 1px 1px 1px #21240b;
+}
+.school-address{
+    margin-bottom:1rem;
+}
+.logo-image{
+    width:100px;
+    border-radius: 12px ;
+    filter:brightness(1.5);
+}
+
+@media screen and (max-width:459px){
+    .logo-image{
+        margin-top:6px;
+        width:75px;
+        margin-left: 8px;  /*navbar changes by this line be carefull*/
+        
+    }
+    
+}
+
+@media screen and (min-width:300px) and (max-width:374px){
+    .school_info{
+        display: grid;
+        grid-template-columns: 0px 1fr 0px;
+        width: 100%;
+        padding: 0px 0px;
+        background: #6080f4;
+
+
+    }
+    .school-name h1{
+        font-size: 1.1rem;
+        margin:3px 0px;
+        color:#e9ec36;
+
+        
+    }
+    .school-address{
+        font-size:0.6rem;
+
+    }
+    
+}
+
+@media screen and (min-width:375px) and (max-width:410px){
+    .school_info{
+        display: grid;
+        grid-template-columns: 0px 1fr 0px;
+        width: 100%;
+        padding: 0px 0px;
+        background: #6080f4;
+
+
+    }
+    .school-name h1{
+        font-size: 1.2rem;
+        margin:3px 0px;
+        color:#e9ec36;
+
+        
+    }
+    .school-address{
+        font-size:0.6rem;
+
+    }
+    
+}
+
+
+@media screen and (min-width:411px) and (max-width:439px){
+    .school_info{
+        display: grid;
+        grid-template-columns: 0px 1fr 0px;
+        width: 100%;
+        padding: 0px 0px;
+        background: #6080f4;
+    }
+    .school-name h1{
+        font-size: 1.4rem;
+        margin:3px 0px;
+        color:#e9ec36;        
+    }
+    .school-address{
+        font-size:0.6rem;
+    }
+    
+}
+
+@media screen and (min-width:440px) and (max-width:527px){
+    .school_info{
+        display: grid;
+        grid-template-columns: 10px 1fr 0px;
+        width: 100%;
+        padding: 5px 0px;
+        background: #6080f4;
+
+    }
+    .school-name h1{
+        font-size: 1.5rem;
+        margin:5px 0px;
+        color:#e9ec36;
+        
+    }
+    .school-address{
+        font-size:0.7rem;
+
+    }
+}
+
+@media screen and (min-width:527px) and (max-width:680px){
+    .school_info{
+        display: grid;
+        grid-template-columns: 50px 1fr 0px;
+        width: 100%;
+        padding: 5px 0px;
+        background: #6080f4;
+
+    }
+    .school-name h1{
+        font-size: 1.7rem;
+        margin:5px -6px;
+        color:#e9ec36;
+        
+    }
+    /* 680 753 */
+    .school-address{
+        font-size:0.9rem;
+    }
+
+}
+
+@media screen and (min-width:681px) and (max-width:753px){
+    .school_info{
+        display: grid;
+        grid-template-columns: 50px 1fr 0px;
+        width: 100%;
+        padding: 5px 0px;
+        background: #6080f4;
+        
+    }
+    .school-name h1{
+        font-size: 2.1rem;/*to be change according to req*/
+        margin:5px -6px;
+        color:#e9ec36;
+        
+    }
+    /* 680 753 */
+    .school-address{
+        font-size:0.9rem;
+    }
+    
+}

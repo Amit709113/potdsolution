@@ -1,0 +1,33 @@
+{
+    "noticeBoard":[
+        {
+            "noticeDate":"12-aug-2023",
+            "noticeTitle":"PTM",
+            "noticeDesc":"हिंदी कहानियाँ  एक ऐसी विधा जो जीवन को, परिस्थितियों को अपने में लेकर उलझी हुई समझ को, सुलझा देती हैं. हिंदी कहानी हमारे व्यक्तित्व को एक दर्पण की भांति हमारे सामने प्रेषित करती हैं जिनसे हमें अपने कर्मो का बोध होता हैं. माना कि कहानियाँ काल्पनिक होती हैं पर कल्पना परिस्थिती के द्वारा ही निर्मित होती हैं",
+            "auther":"principle"
+
+        },
+        {
+            "noticeDate":"12-aug-2023",
+            "noticeTitle":"Exam Routine",
+            "noticeDesc":"परिस्थितियों को अपने में लेकर उलझी हुई समझ को, सुलझा देती हैं.",   
+            "auther":"director",
+            "link":"http://drive.google.com/uc?export=view&id=1j4_lS72wGQbENBdjlb9a1Z_YZF8hZdnZ"
+        },
+        {
+            "noticeDate":"12-aug-2023",
+            "noticeTitle":"Celebration of Independent day",
+            "noticeDesc":"हिंदी कहानियाँ  एक ऐसी विधा जो जीवन को, ",   
+            "auther":"principle",
+            "link":"http://drive.google.com/uc?export=view&id=1j4_lS72wGQbENBdjlb9a1Z_YZF8hZdnZ"
+        },
+        {
+            "noticeDate":"12-aug-2023",
+            "noticeTitle":"Teachers Day",
+            "noticeDesc":" हिंदी कहानी हमारे व्यक्तित्व को एक दर्पण की भांति हमारे सामने प्रेषित करती हैं जिनसे हमें अपने कर्मो का बोध होता हैं. माना कि कहानियाँ काल्पनिक होती हैं पर कल्पना परिस्थिती के द्वारा ही निर्मित होती हैं",   
+            "auther":"principle",
+            "link":"http://drive.google.com/uc?export=view&id=1j4_lS72wGQbENBdjlb9a1Z_YZF8hZdnZ"
+        }
+
+    ]
+}

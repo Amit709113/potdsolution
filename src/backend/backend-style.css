@@ -1,0 +1,220 @@
+#backend-nav{
+    background:#333;
+    display:grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#backend-nav .list{
+    grid-column: 3/3;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0;
+}
+
+#backend-nav .list li{
+    padding:18px;
+    cursor: pointer;
+    width: 100%;
+}
+#backend-nav .list li:hover{
+    background-color: #000;
+    
+    
+}
+
+
+/*style for notice event gallery category */
+#dashboard .dash-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0f4607;
+    color:#fff;
+    padding: 0;
+    margin:0;
+}
+
+#dashboard .dash-nav li{
+    padding:16px 32px;
+    width:100%;
+    cursor:pointer;
+}
+
+#dashboard .dash-nav li:hover{
+    background-color:green;
+}
+#item-dash {
+    background-color: #ddd;
+}
+
+#item-dash .main-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21px;
+}
+.form-heading{
+    text-align: center;
+    text-transform: uppercase;
+    color:#222;
+    padding:12px;
+    background-color: #e2a3a3;
+    margin:0;
+}
+/* style  for create notice update notice such type of element */
+.element-dashboard{
+    padding:0px;
+    /* background:#999; */
+}
+.element-dashboard .dash-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding:0;
+    margin:0;
+}
+.element-dashboard .dash-item li{
+    background-color: rgb(47, 85, 85);
+    padding:12px;
+    padding-left:32px;
+    border-bottom:1px solid #000;
+    cursor: pointer;
+}
+.element-dashboard .dash-item li:hover{
+    background-color: rgb(6, 58, 58);
+}
+
+/* main-element delete create or update of gallery,notice,event */
+.main-element{
+    background-color: #eee;
+
+}
+.main-element table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+
+}
+.main-element table{
+    width:100%;
+}
+.main-element th,td{
+    padding:12px;
+
+}
+.leaf-btn{
+    padding: 8px 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    outline: none;
+    border:0.5px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+label{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+input{
+    border: 1px solid #333;
+    height: 30px;
+    border-radius: 6px;
+}
+form{
+    padding:12px 9px;
+    border-radius: 12px;
+    border: 1px solid #222;
+}
+.submit-btn{
+    background-color: #28b912;
+}
+.submit-btn:hover{
+    background-color: #227e14;
+}
+.reset-btn{
+    background-color: #69ccd8;
+}
+.reset-btn:hover{
+    background-color: #3e9ea8;
+}
+.message-log{
+    text-align: center;
+    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 12px;
+    margin:0;
+    
+}
+.message-success-log{
+    color:#306b00;
+   
+}
+.message-error-log{
+    color:#ff0000;
+}
+.message-warning-log{
+    color:#5208c1;
+}
+textarea, input, select,option{
+    margin-left:24px;
+    border:1px solid #222;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+table{
+    width:100%;
+}
+
+.close-btn{
+    background-color: #f5f534;
+    border:none;
+}
+.close-btn:hover{
+    background-color: #c2c208;
+}
+.delete-btn{
+    background-color: #ff00009f;
+    color:white;
+    border:none;
+}
+.update-btn{
+    background-color: #001aff9f;
+    color:white;
+    border:none;
+}
+.delete-btn:hover{
+    background-color: #a90101;
+}
+.update-btn:hover{
+    background-color: #0212a4
+}
+.dashboard-heading{
+    background-color: rgb(231, 189, 189);
+    margin: 0;
+    padding:16px 32px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 676px){
+    #dashboard .dash-nav{
+        flex-direction: column;
+    }
+}
+.icon-btn{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}

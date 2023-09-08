@@ -1,0 +1,131 @@
+:root {
+    --main-bg-color:#efefef;
+    --card-bg-color:#fff;
+    --royal:#4070f4;
+    --button-bg-color:#265df2;
+    --card-wrapper-bg-color:#777;
+    --title-color:#333;
+    --des-color:#707070;
+
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;   
+}
+.main-body{
+    /* min-height:100vh ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+}
+.vlog-wrapper{
+    /* background-color: #333; */
+    /* width:100vw; */
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.vlog{
+    width: min(25%, 370px);
+    /* border-radius: 25px; */
+    background-color: var(--card-bg-color);
+    border-top:1px solid var(--title-color);
+    /* border-left:1px solid var(--title-color); */
+    border-bottom:1px solid var(--title-color);
+    border-right:1px solid var(--title-color);
+}
+.vlog:first-child{
+    border:1px solid var(--title-color);
+}
+
+.logo-content,.vlog-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 14px;
+}
+.logo-content{
+    position: relative;
+    row-gap:25px;
+    padding:25px 0;
+    background-color: var(--royal);
+    /* border-radius:25px 25px 0 0px; */
+
+}
+.vlog-logo{
+    position: relative;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    background: var(--card-bg-color);
+    padding:3px;
+    
+}
+.vlog-logo .vlog-icon{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:4px solid var(--royal);
+}
+.title{
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--title-color);
+
+}
+.description{
+    font-size: 14px;
+    color:var(--des-color);
+    text-align: center;
+
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color:var(--card-bg-color);
+    padding:8px 16px;
+    background-color: var(--royal);
+    border-radius: 6px;
+    margin:14px;
+    transition: all 0.3s ease;
+
+}
+.button:hover{
+    background: var(--button-bg-color);
+}
+
+.show{
+    display:block;
+}
+.hidden{
+    display:none;
+}
+
+@media screen and (max-width:556px) {
+    .vlog{
+        width: 100%;
+        border: 1px solid black;
+        
+    }
+      
+}
+
+
+@media screen and (max-width:978px) and (min-width:557px){
+    .vlog{
+        width:50%;
+        border: 1px solid black;
+
+    }
+    
+}
+
+
+
+
+
