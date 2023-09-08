@@ -1,6 +1,7 @@
 import React from 'react'
-import BackendNav from './BackendNav'
+
 import './Backend-style.css'
+
 import { Outlet, useNavigate } from 'react-router-dom'
 const DashBoard = () => {
   const navigator=useNavigate()
